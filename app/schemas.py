@@ -18,6 +18,7 @@ class TravelRequestRecord(BaseModel):
     travel_date: str
     passengers: int
     customer_name: str
+    customer_phone: Optional[str] = "No especificado"
     customer_email: str
     created_at: str
 

@@ -30,6 +30,7 @@ def save_travel_request(session_id: str, data: Dict[str, Any]) -> str:
         "travel_date": data.get("travel_date", "No especificado"),
         "passengers": int(data.get("passengers", 1)),
         "customer_name": data.get("customer_name", "Cliente"),
+        "customer_phone": data.get("customer_phone", "No especificado"),
         "customer_email": data.get("customer_email", "correo@ejemplo.com"),
         "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }

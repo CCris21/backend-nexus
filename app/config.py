@@ -17,3 +17,10 @@ CHUNK_OVERLAP = 150
 
 DATA_PDFS_DIR = BASE_DIR / "data" / "pdfs"
 REQUESTS_FILE = BASE_DIR / "app" / "requests_data.json"
+
+SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
+SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
+SMTP_USER = os.getenv("SMTP_USER", "")
+SMTP_PASS = os.getenv("SMTP_PASS", "")
+NOTIFICATION_EMAIL = os.getenv("NOTIFICATION_EMAIL", os.getenv("SMTP_USER", ""))
+
